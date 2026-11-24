@@ -10,23 +10,21 @@ As importações feitas pelo botão ficam guardadas apenas no navegador usado pa
 
 ## Publicar arquivos mensais na Vercel
 
-1. Use a pasta do mês correspondente: `data/2026/02-fevereiro/`, `data/2026/03-marco/` até `data/2026/12-dezembro/`. Todas as pastas já estão criadas.
-2. Coloque o CSV dentro da pasta do mês. Exemplo: `data/2026/02-fevereiro/relatorio.csv`.
-3. Edite `data/2026/manifest.json` e associe o número do mês ao caminho do arquivo, relativo a `data/2026/`. Exemplo:
+Cada mês já tem uma pasta própria em `data/2026/`, e o manifesto está pré-configurado para procurar um arquivo CSV em cada pasta. Copie os arquivos para os caminhos abaixo, mantendo os nomes indicados:
 
-```json
-{
-  "year": 2026,
-  "updatedAt": "2026-11-24T12:00:00-03:00",
-  "months": {
-    "2": "02-fevereiro/relatorio.csv",
-    "3": "03-marco/relatorio.csv",
-    "10": "10-outubro/relatorio.csv"
-  }
-}
-```
+- `data/2026/02-fevereiro/fevereiro.csv`
+- `data/2026/03-marco/Março.csv`
+- `data/2026/04-abril/abril.csv`
+- `data/2026/05-maio/Maio.csv`
+- `data/2026/06-junho/junho.csv`
+- `data/2026/07-julho/julho.csv`
+- `data/2026/08-agosto/agosto.csv`
+- `data/2026/09-setembro/setembro.csv`
+- `data/2026/10-outubro/outubro.csv`
+- `data/2026/11-novembro/novembro.csv`
+- `data/2026/12-dezembro/dezembro.csv`
 
-4. Publique novamente a pasta do projeto na Vercel. Meses que não estiverem no manifesto aparecem como **Sem arquivo**.
+Se os nomes dos arquivos forem mantidos, não é necessário alterar o manifesto. Se renomear um CSV, ajuste o caminho do mês correspondente em `data/2026/manifest.json`. Depois, publique novamente o projeto na Vercel. Os meses sem arquivo continuarão aparecendo como **Sem arquivo**.
 
 ## Formato dos CSVs
 

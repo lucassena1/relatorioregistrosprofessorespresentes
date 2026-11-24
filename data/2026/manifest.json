@@ -1,5 +1,17 @@
 {
   "year": 2026,
   "updatedAt": null,
-  "months": {}
+  "months": {
+    "2": "02-fevereiro/fevereiro.csv",
+    "3": "03-marco/Março.csv",
+    "4": "04-abril/abril.csv",
+    "5": "05-maio/Maio.csv",
+    "6": "06-junho/junho.csv",
+    "7": "07-julho/julho.csv",
+    "8": "08-agosto/agosto.csv",
+    "9": "09-setembro/setembro.csv",
+    "10": "10-outubro/outubro.csv",
+    "11": "11-novembro/novembro.csv",
+    "12": "12-dezembro/dezembro.csv"
+  }
 }
